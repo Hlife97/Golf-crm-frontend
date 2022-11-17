@@ -1,0 +1,9 @@
+.form_group label{
+    @apply font-semibold text-sm mb-1 text-gray-500;
+}
+.form_group input{
+    @apply bg-gray-50 border rounded p-2;
+}
+.form_group select{
+    @apply bg-gray-50 border rounded p-2 cursor-pointer;
+}

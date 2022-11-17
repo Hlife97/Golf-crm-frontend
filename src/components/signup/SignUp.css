@@ -1,0 +1,39 @@
+textarea:focus, input:focus{
+    outline: none;
+}
+.signup{
+    height: 100vh;
+    /* background-color: aqua; */
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    border: none !important;
+    padding: 4rem;
+}
+.card h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.btn__primary{
+    background-color: #8731c0e7;
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: .5px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.form__control{
+    border: 1px solid #eeeeee;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:.8rem;
+}
