@@ -23,7 +23,7 @@ function App() {
       <main className='container'>
         <Routes>
           <Route path="/" element={<Home />}/>
-          {user && <Route path="/contacts" element={<Contact />} exact/>}
+          <Route path="/contacts" element={<Contact />} exact/>
           <Route path="/signup" element={<SignUp />} exact />
           <Route path="/signin" element={<Signin />} exact />
           <Route path="/choose-password" element={<ChoosePassword />} exact />

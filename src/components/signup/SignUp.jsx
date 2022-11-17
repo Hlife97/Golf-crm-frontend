@@ -45,7 +45,7 @@ const SignUp = () => {
                     <input className='border rounded-md w-full md:w-72 px-3 py-2 bg-white' type="password" placeholder='Enter your password' name='password' value={data.password} onChange={handleChange} required/>
                     {error && <div className='text-red-600 text-sm'>{error}</div>}
                     <button className='bg-indigo-600 text-white rounded-md px-3 py-2'>Get started</button>
-                    <div class="divider">OR</div>
+                    <div className="divider">OR</div>
                     <button className='flex items-center justify-center gap-2 border rounded-md px-3 py-2 font-semibold text-gray-600'>
                         <FcGoogle className='text-2xl'/>  Sign up with Google
                     </button>

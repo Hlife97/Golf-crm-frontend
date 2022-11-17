@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Contact from './Contact';
-import ListGroup from 'react-bootstrap/ListGroup';
 import ContactModal from '../../components/modals/ContactModal';
 import {AiOutlineUserAdd} from 'react-icons/ai'
 
@@ -19,7 +18,7 @@ const Contacts = () => {
   }, [] );
 
   return (
-    <div className='contacts-page py-3'>
+    <div className='contacts-page py-3 min-h-screen'>
 
       <div className="flex items-center justify-between px-2 py-3 border rounded mb-3">
         <div>
@@ -30,15 +29,15 @@ const Contacts = () => {
         </div>
       </div>
 
-      <ListGroup>
+      <ul>
         {contacts && contacts.map((contact, i) => (
-            <ListGroup.Item key={i}>
+            <li key={i}>
               <Contact contact={contact}/>
-            </ListGroup.Item>
+            </li>
         ))}
-      </ListGroup>
+      </ul>
 
-      <ContactModal />
+      {/* <ContactModal /> */}
     </div>
   )
 }

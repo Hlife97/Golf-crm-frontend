@@ -12,26 +12,26 @@ const Signin = () => {
                 <div className='text-gray-400 text-sm font-semibold'>Welcome back! Please enter your details.</div>
                 <form className='mt-2'>
                     <div className="form_group">
-                        <label class="label">
-                            <span class="label-text font-semibold">Email</span>
+                        <label className="label">
+                            <span className="label-text font-semibold">Email</span>
                         </label>
                         <input className='border rounded-md w-full md:w-72 px-3 py-2 bg-white' type="text" placeholder='Enter your email'/>
                     </div>
                     <div className="form_group">
-                        <label class="label">
-                            <span class="label-text font-semibold">Password</span>
+                        <label className="label">
+                            <span className="label-text font-semibold">Password</span>
                         </label>
                         <input className='border rounded-md w-full md:w-72 px-3 py-2 bg-white' type="password" placeholder='Enter your password'/>
                     </div>
-                    <div class="flex justify-between items-center">
-                        <label class="flex items-center gap-2 cursor-pointer">
-                            <input type="checkbox" class="checkbox checkbox-xs checkbox-info" />
-                            <span class="label-text text-sm">Remember for 30 days</span> 
+                    <div className="flex justify-between items-center">
+                        <label className="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" className="checkbox checkbox-xs checkbox-info" />
+                            <span className="label-text text-sm">Remember for 30 days</span> 
                         </label>
                         <Link to="/choose-password" className='text-sm text-indigo-500'>Forgot password</Link>
                     </div>
                     <button className='bg-indigo-600 text-white rounded-md px-3 py-2'>Get started</button>
-                    <div class="divider">OR</div>
+                    <div className="divider">OR</div>
                     <button className='flex items-center justify-center gap-2 border rounded-md px-3 py-2 font-semibold text-gray-600'>
                         <FcGoogle className='text-2xl'/> Sign up with Google
                     </button>
